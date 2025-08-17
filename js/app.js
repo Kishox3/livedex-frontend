@@ -1,6 +1,8 @@
 // livedex-frontend/js/app.js
 
-const API_URL = "http://localhost:5000/api";
+// Cambiar localhost por la IP de tu host Kasten donde corre la API
+const API_URL = "http://172.31.17.31:5000/api";
+
 const token = localStorage.getItem('token');
 if (!token) window.location = "login.html";
 
@@ -44,21 +46,14 @@ form.onsubmit = async function(e) {
     url += `/${editingId}`;
     method = "PUT";
   }
-  await fetch(url, {
-    method,
-    headers,
-    body: JSON.stringify(data)
-  });
+  await fetch(url, { method, headers, body: JSON.stringify(data) });
   editingId = null;
   form.reset();
   cargarItems();
 };
 
 window.eliminarItem = async function(id) {
-  await fetch(`${API_URL}/livedex/${id}`, {
-    method: "DELETE",
-    headers
-  });
+  await fetch(`${API_URL}/livedex/${id}`, { method: "DELETE", headers });
   cargarItems();
 };
 

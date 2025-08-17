@@ -1,6 +1,7 @@
 // livedex-frontend/js/auth.js
 
-const API_URL = "http://localhost:5000/api";
+// Cambiar localhost por la IP del host Kasten
+const API_URL = "http://172.31.17.31:5000/api";
 
 document.getElementById('login-form').onsubmit = async function(e) {
   e.preventDefault();
@@ -18,7 +19,9 @@ document.getElementById('login-form').onsubmit = async function(e) {
     } else {
       document.getElementById('msg').textContent = res.error || "Error";
     }
-  } catch { document.getElementById('msg').textContent = "Error de red"; }
+  } catch {
+    document.getElementById('msg').textContent = "Error de red";
+  }
 };
 
 document.getElementById('register-form').onsubmit = async function(e) {
@@ -36,5 +39,7 @@ document.getElementById('register-form').onsubmit = async function(e) {
     } else {
       document.getElementById('msg').textContent = res.error || "Error";
     }
-  } catch { document.getElementById('msg').textContent = "Error de red"; }
+  } catch {
+    document.getElementById('msg').textContent = "Error de red";
+  }
 };
