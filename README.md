@@ -8,18 +8,18 @@ Interfaz web minimalista para la Livedex personal. Permite login, registro y CRU
 - Login/registro de usuario
 - CRUD de entradas personales (nombre, tipo, descripción, imagen por URL)
 - Interfaz simple con Bootstrap 5
-- Funciona conectado a la [Livedex API](https://github.com/tuusuario/livedex-api)
+- Funciona conectado a la [Livedex API](https://github.com/Kishox3/livedex-api)
 
 ## Requisitos
 
-- [Livedex API](https://github.com/tuusuario/livedex-api) corriendo en `http://localhost:5000`
+- [Livedex API](https://github.com/Kishox3/livedex-api) corriendo en `http://localhost:5000`
 - Navegador moderno
 
 ## Uso
 
 1. Clona el repositorio:
 ```bash
-git clone https://github.com/tuusuario/livedex-frontend.git
+git clone https://github.com/Kishox3/livedex-frontend.git
 cd livedex-frontend
 ```
 2. Usa una extensión como "Live Server" de VS Code, o sirve la carpeta en un puerto (por ejemplo 8080):
