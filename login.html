@@ -1,0 +1,28 @@
+<!-- livedex-frontend/login.html -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Livedex - Login</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-light d-flex justify-content-center align-items-center" style="height:100vh;">
+  <div class="card p-4" style="min-width:300px;">
+    <h2 class="mb-3 text-center">Livedex</h2>
+    <form id="login-form">
+      <input class="form-control mb-2" type="email" name="email" placeholder="Email" required>
+      <input class="form-control mb-2" type="password" name="password" placeholder="Password" required>
+      <button class="btn btn-primary w-100 mb-2" type="submit">Login</button>
+    </form>
+    <form id="register-form">
+      <input class="form-control mb-2" type="email" name="email" placeholder="Email" required>
+      <input class="form-control mb-2" type="password" name="password" placeholder="Password" required>
+      <button class="btn btn-secondary w-100" type="submit">Registrarse</button>
+    </form>
+    <div id="msg" class="mt-2 text-danger"></div>
+  </div>
+  <script src="js/auth.js"></script>
+</body>
+</html>
